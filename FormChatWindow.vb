@@ -1,5 +1,8 @@
 ﻿Imports DialogManager.AI_Controllers.DialogControl
 
+''' <summary>
+''' Basic Test Window; Test the dialogs after creation with manager
+''' </summary>
 Public Class FormChatWIndow
 
 
