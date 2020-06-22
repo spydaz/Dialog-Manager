@@ -64,10 +64,10 @@ Partial Class FormChatWIndow
         Me.GroupBox5.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox5.ForeColor = System.Drawing.Color.White
         Me.GroupBox5.Location = New System.Drawing.Point(0, 0)
-        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox5.Size = New System.Drawing.Size(954, 523)
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox5.Size = New System.Drawing.Size(1272, 644)
         Me.GroupBox5.TabIndex = 1
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Test Dialog interface"
@@ -77,11 +77,11 @@ Partial Class FormChatWIndow
         Me.GroupBox12.Controls.Add(Me.TextBoxViewIntent)
         Me.GroupBox12.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox12.ForeColor = System.Drawing.Color.White
-        Me.GroupBox12.Location = New System.Drawing.Point(150, 304)
-        Me.GroupBox12.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox12.Location = New System.Drawing.Point(200, 374)
+        Me.GroupBox12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox12.Name = "GroupBox12"
-        Me.GroupBox12.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox12.Size = New System.Drawing.Size(534, 217)
+        Me.GroupBox12.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox12.Size = New System.Drawing.Size(712, 268)
         Me.GroupBox12.TabIndex = 7
         Me.GroupBox12.TabStop = False
         Me.GroupBox12.Text = "ViewIntent"
@@ -91,12 +91,12 @@ Partial Class FormChatWIndow
         Me.TextBoxViewIntent.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.TextBoxViewIntent.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBoxViewIntent.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxViewIntent.Location = New System.Drawing.Point(2, 21)
-        Me.TextBoxViewIntent.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxViewIntent.Location = New System.Drawing.Point(3, 26)
+        Me.TextBoxViewIntent.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxViewIntent.Multiline = True
         Me.TextBoxViewIntent.Name = "TextBoxViewIntent"
         Me.TextBoxViewIntent.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.TextBoxViewIntent.Size = New System.Drawing.Size(530, 194)
+        Me.TextBoxViewIntent.Size = New System.Drawing.Size(706, 240)
         Me.TextBoxViewIntent.TabIndex = 0
         '
         'GroupBox11
@@ -105,11 +105,11 @@ Partial Class FormChatWIndow
         Me.GroupBox11.Controls.Add(Me.ListBoxParameters)
         Me.GroupBox11.Dock = System.Windows.Forms.DockStyle.Left
         Me.GroupBox11.ForeColor = System.Drawing.Color.White
-        Me.GroupBox11.Location = New System.Drawing.Point(2, 304)
-        Me.GroupBox11.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox11.Location = New System.Drawing.Point(3, 374)
+        Me.GroupBox11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox11.Size = New System.Drawing.Size(148, 217)
+        Me.GroupBox11.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox11.Size = New System.Drawing.Size(197, 268)
         Me.GroupBox11.TabIndex = 6
         Me.GroupBox11.TabStop = False
         Me.GroupBox11.Text = "Found Parameters"
@@ -119,11 +119,11 @@ Partial Class FormChatWIndow
         Me.ListBoxParameters.BackColor = System.Drawing.SystemColors.Info
         Me.ListBoxParameters.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBoxParameters.FormattingEnabled = True
-        Me.ListBoxParameters.ItemHeight = 19
-        Me.ListBoxParameters.Location = New System.Drawing.Point(2, 21)
-        Me.ListBoxParameters.Margin = New System.Windows.Forms.Padding(2)
+        Me.ListBoxParameters.ItemHeight = 25
+        Me.ListBoxParameters.Location = New System.Drawing.Point(3, 26)
+        Me.ListBoxParameters.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ListBoxParameters.Name = "ListBoxParameters"
-        Me.ListBoxParameters.Size = New System.Drawing.Size(144, 194)
+        Me.ListBoxParameters.Size = New System.Drawing.Size(191, 240)
         Me.ListBoxParameters.TabIndex = 5
         '
         'GroupBoxUserinput
@@ -136,11 +136,11 @@ Partial Class FormChatWIndow
         Me.GroupBoxUserinput.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBoxUserinput.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBoxUserinput.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBoxUserinput.Location = New System.Drawing.Point(2, 21)
-        Me.GroupBoxUserinput.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBoxUserinput.Location = New System.Drawing.Point(3, 26)
+        Me.GroupBoxUserinput.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBoxUserinput.Name = "GroupBoxUserinput"
-        Me.GroupBoxUserinput.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBoxUserinput.Size = New System.Drawing.Size(682, 283)
+        Me.GroupBoxUserinput.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBoxUserinput.Size = New System.Drawing.Size(909, 348)
         Me.GroupBoxUserinput.TabIndex = 5
         Me.GroupBoxUserinput.TabStop = False
         Me.GroupBoxUserinput.Text = "Responses"
@@ -150,10 +150,10 @@ Partial Class FormChatWIndow
         Me.ButtonSendQuery.BackColor = System.Drawing.Color.Silver
         Me.ButtonSendQuery.Dock = System.Windows.Forms.DockStyle.Right
         Me.ButtonSendQuery.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ButtonSendQuery.Location = New System.Drawing.Point(598, 237)
-        Me.ButtonSendQuery.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonSendQuery.Location = New System.Drawing.Point(797, 293)
+        Me.ButtonSendQuery.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonSendQuery.Name = "ButtonSendQuery"
-        Me.ButtonSendQuery.Size = New System.Drawing.Size(82, 44)
+        Me.ButtonSendQuery.Size = New System.Drawing.Size(109, 53)
         Me.ButtonSendQuery.TabIndex = 6
         Me.ButtonSendQuery.Text = "Ask"
         Me.ButtonSendQuery.UseVisualStyleBackColor = False
@@ -163,10 +163,10 @@ Partial Class FormChatWIndow
         Me.TextBoxInput.Dock = System.Windows.Forms.DockStyle.Left
         Me.TextBoxInput.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxInput.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TextBoxInput.Location = New System.Drawing.Point(2, 237)
-        Me.TextBoxInput.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxInput.Location = New System.Drawing.Point(3, 293)
+        Me.TextBoxInput.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxInput.Name = "TextBoxInput"
-        Me.TextBoxInput.Size = New System.Drawing.Size(592, 26)
+        Me.TextBoxInput.Size = New System.Drawing.Size(788, 31)
         Me.TextBoxInput.TabIndex = 5
         Me.TextBoxInput.Tag = "Enter User Querys here"
         '
@@ -176,10 +176,9 @@ Partial Class FormChatWIndow
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(2, 218)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(3, 268)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(121, 19)
+        Me.Label3.Size = New System.Drawing.Size(148, 25)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Input Text here"
         '
@@ -189,12 +188,12 @@ Partial Class FormChatWIndow
         Me.TextBoxOutput.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextBoxOutput.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxOutput.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TextBoxOutput.Location = New System.Drawing.Point(2, 21)
-        Me.TextBoxOutput.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxOutput.Location = New System.Drawing.Point(3, 26)
+        Me.TextBoxOutput.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxOutput.Multiline = True
         Me.TextBoxOutput.Name = "TextBoxOutput"
         Me.TextBoxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBoxOutput.Size = New System.Drawing.Size(678, 197)
+        Me.TextBoxOutput.Size = New System.Drawing.Size(903, 242)
         Me.TextBoxOutput.TabIndex = 0
         Me.TextBoxOutput.Tag = "Displays Test Output"
         '
@@ -205,11 +204,11 @@ Partial Class FormChatWIndow
         Me.GroupBox6.Dock = System.Windows.Forms.DockStyle.Right
         Me.GroupBox6.Font = New System.Drawing.Font("Comic Sans MS", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox6.ForeColor = System.Drawing.Color.White
-        Me.GroupBox6.Location = New System.Drawing.Point(684, 21)
-        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox6.Location = New System.Drawing.Point(912, 26)
+        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox6.Size = New System.Drawing.Size(268, 500)
+        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox6.Size = New System.Drawing.Size(357, 616)
         Me.GroupBox6.TabIndex = 0
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Diagnose"
@@ -225,11 +224,11 @@ Partial Class FormChatWIndow
         Me.GroupBox7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox7.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox7.Location = New System.Drawing.Point(2, 23)
-        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox7.Location = New System.Drawing.Point(3, 28)
+        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox7.Size = New System.Drawing.Size(264, 475)
+        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox7.Size = New System.Drawing.Size(351, 586)
         Me.GroupBox7.TabIndex = 3
         Me.GroupBox7.TabStop = False
         '
@@ -240,11 +239,11 @@ Partial Class FormChatWIndow
         Me.GroupBox8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox8.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox8.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox8.Location = New System.Drawing.Point(2, 101)
-        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox8.Location = New System.Drawing.Point(3, 105)
+        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox8.Size = New System.Drawing.Size(260, 159)
+        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox8.Size = New System.Drawing.Size(345, 225)
         Me.GroupBox8.TabIndex = 10
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "Detected Intent"
@@ -254,11 +253,11 @@ Partial Class FormChatWIndow
         Me.GroupBox9.Controls.Add(Me.TextBoxPreviousIntent)
         Me.GroupBox9.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox9.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.GroupBox9.Location = New System.Drawing.Point(2, 47)
-        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox9.Location = New System.Drawing.Point(3, 57)
+        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox9.Size = New System.Drawing.Size(256, 59)
+        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox9.Size = New System.Drawing.Size(339, 73)
         Me.GroupBox9.TabIndex = 1
         Me.GroupBox9.TabStop = False
         Me.GroupBox9.Text = "Previous Intent"
@@ -269,10 +268,10 @@ Partial Class FormChatWIndow
         Me.TextBoxPreviousIntent.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextBoxPreviousIntent.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxPreviousIntent.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.TextBoxPreviousIntent.Location = New System.Drawing.Point(2, 21)
-        Me.TextBoxPreviousIntent.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxPreviousIntent.Location = New System.Drawing.Point(3, 26)
+        Me.TextBoxPreviousIntent.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxPreviousIntent.Name = "TextBoxPreviousIntent"
-        Me.TextBoxPreviousIntent.Size = New System.Drawing.Size(252, 26)
+        Me.TextBoxPreviousIntent.Size = New System.Drawing.Size(333, 31)
         Me.TextBoxPreviousIntent.TabIndex = 3
         Me.TextBoxPreviousIntent.Tag = "Previous Detcted Intent"
         '
@@ -280,10 +279,10 @@ Partial Class FormChatWIndow
         '
         Me.TextBoxDetectedIntent.BackColor = System.Drawing.SystemColors.Info
         Me.TextBoxDetectedIntent.Dock = System.Windows.Forms.DockStyle.Top
-        Me.TextBoxDetectedIntent.Location = New System.Drawing.Point(2, 21)
-        Me.TextBoxDetectedIntent.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxDetectedIntent.Location = New System.Drawing.Point(3, 26)
+        Me.TextBoxDetectedIntent.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxDetectedIntent.Name = "TextBoxDetectedIntent"
-        Me.TextBoxDetectedIntent.Size = New System.Drawing.Size(256, 26)
+        Me.TextBoxDetectedIntent.Size = New System.Drawing.Size(339, 31)
         Me.TextBoxDetectedIntent.TabIndex = 0
         Me.TextBoxDetectedIntent.Tag = "Current Detected intent"
         '
@@ -291,10 +290,9 @@ Partial Class FormChatWIndow
         '
         Me.Label4.AutoSize = True
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Label4.Location = New System.Drawing.Point(2, 260)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(3, 330)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(60, 19)
+        Me.Label4.Size = New System.Drawing.Size(72, 25)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "History"
         '
@@ -305,12 +303,12 @@ Partial Class FormChatWIndow
         Me.ListBoxCurrentIntents.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBoxCurrentIntents.ForeColor = System.Drawing.SystemColors.ControlText
         Me.ListBoxCurrentIntents.FormattingEnabled = True
-        Me.ListBoxCurrentIntents.ItemHeight = 19
-        Me.ListBoxCurrentIntents.Location = New System.Drawing.Point(2, 40)
-        Me.ListBoxCurrentIntents.Margin = New System.Windows.Forms.Padding(2)
+        Me.ListBoxCurrentIntents.ItemHeight = 25
+        Me.ListBoxCurrentIntents.Location = New System.Drawing.Point(3, 51)
+        Me.ListBoxCurrentIntents.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ListBoxCurrentIntents.Name = "ListBoxCurrentIntents"
         Me.ListBoxCurrentIntents.ScrollAlwaysVisible = True
-        Me.ListBoxCurrentIntents.Size = New System.Drawing.Size(260, 61)
+        Me.ListBoxCurrentIntents.Size = New System.Drawing.Size(345, 54)
         Me.ListBoxCurrentIntents.TabIndex = 6
         Me.ListBoxCurrentIntents.Tag = "Current Topics / Intents (PreRequisites Collected)"
         '
@@ -320,10 +318,9 @@ Partial Class FormChatWIndow
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(2, 21)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(3, 26)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(174, 19)
+        Me.Label2.Size = New System.Drawing.Size(214, 25)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Current Topic / Context"
         '
@@ -334,12 +331,12 @@ Partial Class FormChatWIndow
         Me.ListBoxIntentHistory.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBoxIntentHistory.ForeColor = System.Drawing.SystemColors.ControlText
         Me.ListBoxIntentHistory.FormattingEnabled = True
-        Me.ListBoxIntentHistory.ItemHeight = 19
-        Me.ListBoxIntentHistory.Location = New System.Drawing.Point(2, 279)
-        Me.ListBoxIntentHistory.Margin = New System.Windows.Forms.Padding(2)
+        Me.ListBoxIntentHistory.ItemHeight = 25
+        Me.ListBoxIntentHistory.Location = New System.Drawing.Point(3, 355)
+        Me.ListBoxIntentHistory.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ListBoxIntentHistory.Name = "ListBoxIntentHistory"
         Me.ListBoxIntentHistory.ScrollAlwaysVisible = True
-        Me.ListBoxIntentHistory.Size = New System.Drawing.Size(260, 194)
+        Me.ListBoxIntentHistory.Size = New System.Drawing.Size(345, 229)
         Me.ListBoxIntentHistory.TabIndex = 0
         Me.ListBoxIntentHistory.Tag = "History of  Intents PAst"
         '
@@ -349,19 +346,19 @@ Partial Class FormChatWIndow
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label7.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(2, 21)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(3, 26)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(113, 19)
+        Me.Label7.Size = New System.Drawing.Size(138, 25)
         Me.Label7.TabIndex = 2
         Me.Label7.Text = "Previous Intent"
         '
         'FormChatWIndow
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(954, 523)
+        Me.ClientSize = New System.Drawing.Size(1272, 644)
         Me.Controls.Add(Me.GroupBox5)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FormChatWIndow"
         Me.Text = "Dialog Test Interface"
         Me.GroupBox5.ResumeLayout(False)

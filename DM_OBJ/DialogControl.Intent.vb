@@ -482,6 +482,7 @@ Namespace AI_Controllers
                 Dim IntentDetected = False
                 'Detect Intent(TRIGGER)
                 If DetectTrigger(UserInput) = True Then
+                    IntentDetected = True
                     'REQUIRE PARAMETERS: 
                     If NoOfReqParameters > 0 Then
                         'DETECT PARAMETERS
@@ -502,7 +503,7 @@ Namespace AI_Controllers
                     Else
                         'PARAMETERS NOT REQUIRED:
                     End If
-                    IntentDetected = True
+
                 Else
                     'NOT DETECTED: FALSE
                 End If
@@ -517,9 +518,11 @@ Namespace AI_Controllers
                         If ParametersDetected = True Then
                             DetectIntent = True
                         Else
+
                             'REQUIRED PARAMETERS WERE NOT DETECTED
                         End If
                     Else
+                        DetectIntent = True
                         'PARAMETERS WERE NOT REQUIRED
                         'DetectIntent NOT AFFECTED  (SHOULD STILL BE FALSE)
                     End If
