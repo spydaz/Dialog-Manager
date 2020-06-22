@@ -243,6 +243,14 @@ Namespace AI_Controllers
 #End Region
 #Region "ADD"
             ''' <summary>
+            ''' Creates a New IntentResponse and Adds it to Internal Responses
+            ''' </summary>
+            ''' <param name="NewResponse"> </param>
+            Public Sub AddTextResponse(ByRef NewResponse As String)
+                Me.Responses.Add(NewResponse)
+
+            End Sub
+            ''' <summary>
             ''' Adds Action To Intent (ACTION SCRIPT)
             ''' </summary>
             ''' <param name="Name">Must Include: Name of fulfilment Action</param>

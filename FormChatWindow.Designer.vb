@@ -358,7 +358,7 @@ Partial Class FormChatWIndow
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1272, 644)
         Me.Controls.Add(Me.GroupBox5)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormChatWIndow"
         Me.Text = "Dialog Test Interface"
         Me.GroupBox5.ResumeLayout(False)

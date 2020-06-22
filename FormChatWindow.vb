@@ -1,4 +1,5 @@
-﻿Imports DialogManager.AI_Controllers.DialogControl
+﻿Imports System.Web.UI.WebControls
+Imports DialogManager.AI_Controllers.DialogControl
 
 ''' <summary>
 ''' Basic Test Window; Test the dialogs after creation with manager
@@ -6,42 +7,55 @@
 Public Class FormChatWIndow
 
 
-    Public DM As New DialogManager.AI_Controllers.DialogControl.DialogManager
+    Public DM As DialogManager.AI_Controllers.DialogControl.DialogManager
     Public CurrentDialogs As List(Of iDialog)
 
 
-    Public Sub Strt()
-        CurrentDialogs = New List(Of iDialog)
-        DM.ImportDialogs()
-        CurrentDialogs = DM.Dialogs
-        LoadDialogs(CurrentDialogs)
 
-        For Each Item In CurrentDialogs
-            TextBoxViewIntent.Text &= Item.ToJson
-        Next
 
-    End Sub
+
 
     Private Sub ButtonSendQuery_Click(sender As Object, e As EventArgs) Handles ButtonSendQuery.Click
-        Dim Response As String = ""
-        Dim UserIn As String = UCase(TextBoxInput.Text)
-        If DM.GetResponse(UserIn, Response) = True Then
+        If DM.MasterList.Count > 0 Then
+
+
+            DM.SendQuery(UCase(TextBoxInput.Text))
+            TextBoxOutput.Text &= TextBoxInput.Text & vbNewLine & DM.Response & vbNewLine
+            ListBoxIntentHistory.Items.Clear()
+            For Each item In DM.History
+                ListBoxIntentHistory.Items.Add(item.IntentName)
+            Next
+            ListBoxCurrentIntents.Items.Clear()
+            For Each item In DM.CurrentTopicList
+                ListBoxCurrentIntents.Items.Add(item.IntentName)
+            Next
+            TextBoxDetectedIntent.Text = DM.DetectedIntent.IntentName
+            TextBoxPreviousIntent.Text = DM.History(DM.History.Count - 1).IntentName
+            ListBoxParameters.Items.Clear()
+            For Each item In DM.CollectedParameters
+                ListBoxParameters.Items.Add(item.ParameterName)
+            Next
             TextBoxInput.Text = ""
-            TextBoxOutput.Text = Response
+
+
         Else
+            TextBoxOutput.Text = "Please create Intent Dialog items First"
+            TextBoxInput.Text = ""
         End If
     End Sub
 
-    Public Sub LoadDialogs(ByRef Dialogs As List(Of iDialog))
-        CurrentDialogs = Dialogs
-        For Each ItemDialog In Dialogs
+    Private Sub FormChatWIndow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DM = New AI_Controllers.DialogControl.DialogManager
 
-            TextBoxViewIntent.Text &= ItemDialog.DialogName & " < LOADED" & vbNewLine
+        DM.ImportDialogs()
+        CurrentDialogs = DM.Dialogs
+
+        For Each item In CurrentDialogs
+            For Each SubItem In item.AvailableIntents
+                TextBoxViewIntent.Text = SubItem.ToJson
+                DM.MasterList.Add(SubItem)
+            Next
         Next
     End Sub
 
-    Private Sub FormChatWIndow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        Strt()
-    End Sub
 End Class
