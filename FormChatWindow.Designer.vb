@@ -22,6 +22,7 @@ Partial Class FormChatWIndow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormChatWIndow))
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.GroupBox12 = New System.Windows.Forms.GroupBox()
         Me.TextBoxViewIntent = New System.Windows.Forms.TextBox()
@@ -55,7 +56,9 @@ Partial Class FormChatWIndow
         '
         'GroupBox5
         '
-        Me.GroupBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GroupBox5.BackColor = System.Drawing.Color.Blue
+        Me.GroupBox5.BackgroundImage = Global.DialogManager.My.Resources.Resources.Console_B
+        Me.GroupBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox5.Controls.Add(Me.GroupBox12)
         Me.GroupBox5.Controls.Add(Me.GroupBox11)
         Me.GroupBox5.Controls.Add(Me.GroupBoxUserinput)
@@ -74,6 +77,8 @@ Partial Class FormChatWIndow
         '
         'GroupBox12
         '
+        Me.GroupBox12.BackgroundImage = Global.DialogManager.My.Resources.Resources.Console_B
+        Me.GroupBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox12.Controls.Add(Me.TextBoxViewIntent)
         Me.GroupBox12.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox12.ForeColor = System.Drawing.Color.White
@@ -102,6 +107,7 @@ Partial Class FormChatWIndow
         'GroupBox11
         '
         Me.GroupBox11.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GroupBox11.BackgroundImage = Global.DialogManager.My.Resources.Resources.Console_B
         Me.GroupBox11.Controls.Add(Me.ListBoxParameters)
         Me.GroupBox11.Dock = System.Windows.Forms.DockStyle.Left
         Me.GroupBox11.ForeColor = System.Drawing.Color.White
@@ -129,6 +135,7 @@ Partial Class FormChatWIndow
         'GroupBoxUserinput
         '
         Me.GroupBoxUserinput.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GroupBoxUserinput.BackgroundImage = Global.DialogManager.My.Resources.Resources.BluPrint
         Me.GroupBoxUserinput.Controls.Add(Me.ButtonSendQuery)
         Me.GroupBoxUserinput.Controls.Add(Me.TextBoxInput)
         Me.GroupBoxUserinput.Controls.Add(Me.Label3)
@@ -200,6 +207,8 @@ Partial Class FormChatWIndow
         'GroupBox6
         '
         Me.GroupBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GroupBox6.BackgroundImage = Global.DialogManager.My.Resources.Resources.BluPrint
+        Me.GroupBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox6.Controls.Add(Me.GroupBox7)
         Me.GroupBox6.Dock = System.Windows.Forms.DockStyle.Right
         Me.GroupBox6.Font = New System.Drawing.Font("Comic Sans MS", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -215,6 +224,8 @@ Partial Class FormChatWIndow
         '
         'GroupBox7
         '
+        Me.GroupBox7.BackgroundImage = Global.DialogManager.My.Resources.Resources.Console_B
+        Me.GroupBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox7.Controls.Add(Me.GroupBox8)
         Me.GroupBox7.Controls.Add(Me.Label4)
         Me.GroupBox7.Controls.Add(Me.ListBoxCurrentIntents)
@@ -234,6 +245,7 @@ Partial Class FormChatWIndow
         '
         'GroupBox8
         '
+        Me.GroupBox8.BackgroundImage = Global.DialogManager.My.Resources.Resources.BluPrint
         Me.GroupBox8.Controls.Add(Me.GroupBox9)
         Me.GroupBox8.Controls.Add(Me.TextBoxDetectedIntent)
         Me.GroupBox8.Dock = System.Windows.Forms.DockStyle.Fill
@@ -358,6 +370,8 @@ Partial Class FormChatWIndow
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1272, 644)
         Me.Controls.Add(Me.GroupBox5)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormChatWIndow"
         Me.Text = "Dialog Test Interface"
