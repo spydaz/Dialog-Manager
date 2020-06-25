@@ -53,7 +53,23 @@ Public Class FormDialogMangement
 
 #End Region
 #Region "Buttons"
+#Region "Button MEMEORY"
+    Private Sub ButtonSaveMemory_Click(sender As Object, e As EventArgs) Handles ButtonSaveMemory.Click
+        My.Settings.SaveDialogManager = DM
+        Reset()
+    End Sub
+    Private Sub ButtonLoadMemory_Click(sender As Object, e As EventArgs) Handles ButtonLoadMemory.Click
+        DM = My.Settings.SaveDialogManager
+        'wipe memory/reset
+        My.Settings.FirstLoad = True
+        FirstLoad()
+        Reload()
+    End Sub
+#End Region
 #Region "Main"
+    Private Sub ButtonClose_Click(sender As Object, e As EventArgs) Handles ButtonClose.Click
+        Me.Close()
+    End Sub
     Private Sub ButtonSendQuery_Click(sender As Object, e As EventArgs) Handles ButtonSendQuery.Click
         If DM.MasterList.Count > 0 Then
 
@@ -83,36 +99,13 @@ Public Class FormDialogMangement
         End If
     End Sub
 #End Region
-    Private Sub ButtonAddEntityList_Click(sender As Object, e As EventArgs) Handles ButtonAddEntityList.Click
-        CreateNewEntityList = New FormCreateEntity
-        CreateNewEntityList.Show()
-        Dim NewEnt As New NamedEntitys With {
-            .EntityListName = "NewList"
-        }
-        CreateNewEntityList.SetList(NewEnt)
 
-    End Sub
+#Region "intents"
     Private Sub ButtonAddIntent_Click(sender As Object, e As EventArgs) Handles ButtonAddIntent.Click
         CreateNewIntent = New FormCreateIntent
         CreateNewIntent.Show()
         CreateNewIntent.SetMasterLst(DM.MasterList)
         CreateNewIntent.SetEntitys(DM.EntityLists)
-    End Sub
-    Private Sub ButtonEditEntityList_Click(sender As Object, e As EventArgs) Handles ButtonEditEntityList.Click
-        Dim str As String = ListBoxNamedEntitys.SelectedItem
-
-        For Each item In DM.EntityLists
-            If item.EntityListName = str Then
-                CreateNewEntityList = New FormCreateEntity
-                CreateNewEntityList.Show()
-                CreateNewEntityList.SetList(item)
-                DM.EntityLists.Remove(item)
-                ListBoxNamedEntitys.Items.Remove(item.EntityListName)
-                ListBoxEntitys.Items.Clear()
-                Return
-            Else
-            End If
-        Next
     End Sub
     Private Sub ButtonEditIntent_Click(sender As Object, e As EventArgs) Handles ButtonEditIntent.Click
         Dim Intention As String = ListBoxMasterList.SelectedItem
@@ -136,16 +129,6 @@ Public Class FormDialogMangement
             ListBoxMasterList.Items.Add(item.IntentName)
         Next
     End Sub
-    Private Sub SaveList(ByRef EntityList As NamedEntitys) Handles CreateNewEntityList.SaveList
-        If EntityList.EntityListName IsNot Nothing Then
-            DM.EntityLists.Add(EntityList)
-            ListBoxNamedEntitys.Items.Clear()
-            For Each item In DM.EntityLists
-                ListBoxNamedEntitys.Items.Add(item.EntityListName)
-                ListBoxEntitys.Items.Clear()
-            Next
-        End If
-    End Sub
     Private Sub ButtonClearEntityList_Click(sender As Object, e As EventArgs) Handles ButtonClearEntityList.Click
         ListBoxNamedEntitys.Items.Clear()
         DM.EntityLists = New List(Of NamedEntitys)
@@ -166,6 +149,44 @@ Public Class FormDialogMangement
             End If
         Next
     End Sub
+#End Region
+
+#Region "Entitys"
+    Private Sub ButtonAddEntityList_Click(sender As Object, e As EventArgs) Handles ButtonAddEntityList.Click
+        CreateNewEntityList = New FormCreateEntity
+        CreateNewEntityList.Show()
+        Dim NewEnt As New NamedEntitys With {
+            .EntityListName = "NewList"
+        }
+        CreateNewEntityList.SetList(NewEnt)
+
+    End Sub
+    Private Sub ButtonEditEntityList_Click(sender As Object, e As EventArgs) Handles ButtonEditEntityList.Click
+        Dim str As String = ListBoxNamedEntitys.SelectedItem
+
+        For Each item In DM.EntityLists
+            If item.EntityListName = str Then
+                CreateNewEntityList = New FormCreateEntity
+                CreateNewEntityList.Show()
+                CreateNewEntityList.SetList(item)
+                DM.EntityLists.Remove(item)
+                ListBoxNamedEntitys.Items.Remove(item.EntityListName)
+                ListBoxEntitys.Items.Clear()
+                Return
+            Else
+            End If
+        Next
+    End Sub
+    Private Sub SaveList(ByRef EntityList As NamedEntitys) Handles CreateNewEntityList.SaveList
+        If EntityList.EntityListName IsNot Nothing Then
+            DM.EntityLists.Add(EntityList)
+            ListBoxNamedEntitys.Items.Clear()
+            For Each item In DM.EntityLists
+                ListBoxNamedEntitys.Items.Add(item.EntityListName)
+                ListBoxEntitys.Items.Clear()
+            Next
+        End If
+    End Sub
     Private Sub ButtonRemoveEntityList_Click(sender As Object, e As EventArgs) Handles ButtonRemoveEntityList.Click
         Dim Str As String = ListBoxNamedEntitys.SelectedItem
         For Each item In DM.EntityLists
@@ -176,20 +197,6 @@ Public Class FormDialogMangement
             Else
             End If
         Next
-    End Sub
-    Private Sub ButtonClose_Click(sender As Object, e As EventArgs) Handles ButtonClose.Click
-        Me.Close()
-    End Sub
-    Private Sub ButtonSaveMemory_Click(sender As Object, e As EventArgs) Handles ButtonSaveMemory.Click
-        My.Settings.SaveDialogManager = DM
-        Reset()
-    End Sub
-    Private Sub ButtonLoadMemory_Click(sender As Object, e As EventArgs) Handles ButtonLoadMemory.Click
-        DM = My.Settings.SaveDialogManager
-        'wipe memory/reset
-        My.Settings.FirstLoad = True
-        FirstLoad()
-        Reload()
     End Sub
     Private Sub ButtonAddEntity_Click(sender As Object, e As EventArgs) Handles ButtonAddEntity.Click
         If ListBoxNamedEntitys.SelectedItem IsNot Nothing Then
@@ -242,6 +249,8 @@ Public Class FormDialogMangement
         Else
         End If
     End Sub
+#End Region
+
 #End Region
 #Region "View Data"
     Private Sub ListBoxMasterList_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBoxMasterList.SelectedIndexChanged

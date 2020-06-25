@@ -28,13 +28,13 @@ Partial Class FormManageDialogs
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ListBoxDialogs = New System.Windows.Forms.ListBox()
         Me.ButtonExportJson = New System.Windows.Forms.Button()
+        Me.ButtonTest = New System.Windows.Forms.Button()
         Me.ButtonSave = New System.Windows.Forms.Button()
         Me.ButtonImport = New System.Windows.Forms.Button()
         Me.ButtonClear = New System.Windows.Forms.Button()
         Me.ButtonRemove = New System.Windows.Forms.Button()
         Me.ButtonEdit = New System.Windows.Forms.Button()
         Me.ButtonADD = New System.Windows.Forms.Button()
-        Me.ButtonTest = New System.Windows.Forms.Button()
         Me.groupbox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -58,9 +58,9 @@ Partial Class FormManageDialogs
         Me.groupbox1.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.groupbox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.groupbox1.Location = New System.Drawing.Point(0, 0)
-        Me.groupbox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.groupbox1.Margin = New System.Windows.Forms.Padding(2)
         Me.groupbox1.Name = "groupbox1"
-        Me.groupbox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.groupbox1.Padding = New System.Windows.Forms.Padding(2)
         Me.groupbox1.Size = New System.Drawing.Size(454, 531)
         Me.groupbox1.TabIndex = 1
         Me.groupbox1.TabStop = False
@@ -109,7 +109,7 @@ Partial Class FormManageDialogs
         Me.ListBoxDialogs.FormattingEnabled = True
         Me.ListBoxDialogs.ItemHeight = 18
         Me.ListBoxDialogs.Location = New System.Drawing.Point(2, 183)
-        Me.ListBoxDialogs.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ListBoxDialogs.Margin = New System.Windows.Forms.Padding(2)
         Me.ListBoxDialogs.Name = "ListBoxDialogs"
         Me.ListBoxDialogs.Size = New System.Drawing.Size(450, 346)
         Me.ListBoxDialogs.TabIndex = 12
@@ -120,90 +120,12 @@ Partial Class FormManageDialogs
         Me.ButtonExportJson.BackColor = System.Drawing.Color.Black
         Me.ButtonExportJson.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonExportJson.Location = New System.Drawing.Point(376, 57)
-        Me.ButtonExportJson.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonExportJson.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonExportJson.Name = "ButtonExportJson"
         Me.ButtonExportJson.Size = New System.Drawing.Size(69, 32)
         Me.ButtonExportJson.TabIndex = 7
         Me.ButtonExportJson.Text = "Export"
         Me.ButtonExportJson.UseVisualStyleBackColor = False
-        '
-        'ButtonSave
-        '
-        Me.ButtonSave.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.ButtonSave.BackColor = System.Drawing.Color.Black
-        Me.ButtonSave.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonSave.Location = New System.Drawing.Point(251, 93)
-        Me.ButtonSave.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.ButtonSave.Name = "ButtonSave"
-        Me.ButtonSave.Size = New System.Drawing.Size(52, 32)
-        Me.ButtonSave.TabIndex = 7
-        Me.ButtonSave.Text = "Save"
-        Me.ButtonSave.UseVisualStyleBackColor = False
-        '
-        'ButtonImport
-        '
-        Me.ButtonImport.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.ButtonImport.BackColor = System.Drawing.Color.Black
-        Me.ButtonImport.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonImport.Location = New System.Drawing.Point(308, 56)
-        Me.ButtonImport.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.ButtonImport.Name = "ButtonImport"
-        Me.ButtonImport.Size = New System.Drawing.Size(64, 32)
-        Me.ButtonImport.TabIndex = 8
-        Me.ButtonImport.Text = "Import"
-        Me.ButtonImport.UseVisualStyleBackColor = False
-        '
-        'ButtonClear
-        '
-        Me.ButtonClear.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.ButtonClear.BackColor = System.Drawing.Color.Black
-        Me.ButtonClear.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonClear.Location = New System.Drawing.Point(67, 94)
-        Me.ButtonClear.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.ButtonClear.Name = "ButtonClear"
-        Me.ButtonClear.Size = New System.Drawing.Size(56, 32)
-        Me.ButtonClear.TabIndex = 8
-        Me.ButtonClear.Text = "Clear"
-        Me.ButtonClear.UseVisualStyleBackColor = False
-        '
-        'ButtonRemove
-        '
-        Me.ButtonRemove.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.ButtonRemove.BackColor = System.Drawing.Color.Black
-        Me.ButtonRemove.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonRemove.Location = New System.Drawing.Point(127, 94)
-        Me.ButtonRemove.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.ButtonRemove.Name = "ButtonRemove"
-        Me.ButtonRemove.Size = New System.Drawing.Size(69, 32)
-        Me.ButtonRemove.TabIndex = 9
-        Me.ButtonRemove.Text = "Remove"
-        Me.ButtonRemove.UseVisualStyleBackColor = False
-        '
-        'ButtonEdit
-        '
-        Me.ButtonEdit.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.ButtonEdit.BackColor = System.Drawing.Color.Black
-        Me.ButtonEdit.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEdit.Location = New System.Drawing.Point(11, 94)
-        Me.ButtonEdit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.ButtonEdit.Name = "ButtonEdit"
-        Me.ButtonEdit.Size = New System.Drawing.Size(52, 32)
-        Me.ButtonEdit.TabIndex = 10
-        Me.ButtonEdit.Text = "Edit"
-        Me.ButtonEdit.UseVisualStyleBackColor = False
-        '
-        'ButtonADD
-        '
-        Me.ButtonADD.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.ButtonADD.BackColor = System.Drawing.Color.Black
-        Me.ButtonADD.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonADD.Location = New System.Drawing.Point(251, 56)
-        Me.ButtonADD.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.ButtonADD.Name = "ButtonADD"
-        Me.ButtonADD.Size = New System.Drawing.Size(52, 33)
-        Me.ButtonADD.TabIndex = 11
-        Me.ButtonADD.Text = "ADD"
-        Me.ButtonADD.UseVisualStyleBackColor = False
         '
         'ButtonTest
         '
@@ -218,6 +140,84 @@ Partial Class FormManageDialogs
         Me.ButtonTest.Text = "Test"
         Me.ButtonTest.UseVisualStyleBackColor = False
         '
+        'ButtonSave
+        '
+        Me.ButtonSave.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.ButtonSave.BackColor = System.Drawing.Color.Black
+        Me.ButtonSave.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonSave.Location = New System.Drawing.Point(251, 93)
+        Me.ButtonSave.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonSave.Name = "ButtonSave"
+        Me.ButtonSave.Size = New System.Drawing.Size(52, 32)
+        Me.ButtonSave.TabIndex = 7
+        Me.ButtonSave.Text = "Save"
+        Me.ButtonSave.UseVisualStyleBackColor = False
+        '
+        'ButtonImport
+        '
+        Me.ButtonImport.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.ButtonImport.BackColor = System.Drawing.Color.Black
+        Me.ButtonImport.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonImport.Location = New System.Drawing.Point(308, 56)
+        Me.ButtonImport.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonImport.Name = "ButtonImport"
+        Me.ButtonImport.Size = New System.Drawing.Size(64, 32)
+        Me.ButtonImport.TabIndex = 8
+        Me.ButtonImport.Text = "Import"
+        Me.ButtonImport.UseVisualStyleBackColor = False
+        '
+        'ButtonClear
+        '
+        Me.ButtonClear.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.ButtonClear.BackColor = System.Drawing.Color.Black
+        Me.ButtonClear.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonClear.Location = New System.Drawing.Point(67, 94)
+        Me.ButtonClear.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonClear.Name = "ButtonClear"
+        Me.ButtonClear.Size = New System.Drawing.Size(56, 32)
+        Me.ButtonClear.TabIndex = 8
+        Me.ButtonClear.Text = "Clear"
+        Me.ButtonClear.UseVisualStyleBackColor = False
+        '
+        'ButtonRemove
+        '
+        Me.ButtonRemove.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.ButtonRemove.BackColor = System.Drawing.Color.Black
+        Me.ButtonRemove.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonRemove.Location = New System.Drawing.Point(127, 94)
+        Me.ButtonRemove.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonRemove.Name = "ButtonRemove"
+        Me.ButtonRemove.Size = New System.Drawing.Size(69, 32)
+        Me.ButtonRemove.TabIndex = 9
+        Me.ButtonRemove.Text = "Remove"
+        Me.ButtonRemove.UseVisualStyleBackColor = False
+        '
+        'ButtonEdit
+        '
+        Me.ButtonEdit.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.ButtonEdit.BackColor = System.Drawing.Color.Black
+        Me.ButtonEdit.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonEdit.Location = New System.Drawing.Point(11, 94)
+        Me.ButtonEdit.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEdit.Name = "ButtonEdit"
+        Me.ButtonEdit.Size = New System.Drawing.Size(52, 32)
+        Me.ButtonEdit.TabIndex = 10
+        Me.ButtonEdit.Text = "Edit"
+        Me.ButtonEdit.UseVisualStyleBackColor = False
+        '
+        'ButtonADD
+        '
+        Me.ButtonADD.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.ButtonADD.BackColor = System.Drawing.Color.Black
+        Me.ButtonADD.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonADD.Location = New System.Drawing.Point(251, 56)
+        Me.ButtonADD.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonADD.Name = "ButtonADD"
+        Me.ButtonADD.Size = New System.Drawing.Size(52, 33)
+        Me.ButtonADD.TabIndex = 11
+        Me.ButtonADD.Text = "ADD"
+        Me.ButtonADD.UseVisualStyleBackColor = False
+        '
         'FormManageDialogs
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -226,7 +226,7 @@ Partial Class FormManageDialogs
         Me.ClientSize = New System.Drawing.Size(454, 531)
         Me.Controls.Add(Me.groupbox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FormManageDialogs"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Manage Dialogs "

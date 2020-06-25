@@ -91,4 +91,23 @@ Public Class FormManageDialogs
         Dim Frm As New FormChatWIndow
         Frm.Show()
     End Sub
+
+
+
+    '' CUREENT _ FIX INTERNAL MEMEORY FOR LOAD/RELOAD (usful)
+
+    '#Region "Button MEMEORY"
+    '    Private Sub ButtonSaveMemory_Click(sender As Object, e As EventArgs) Handles ButtonSave.Click
+    '        My.Settings.SaveDialogManager = DM
+    '        Reset()
+    '    End Sub
+    '    Private Sub ButtonLoadMemory_Click(sender As Object, e As EventArgs) Handles ButtonLoadMemory.Click
+    '        DM = My.Settings.SaveDialogManager
+    '        'wipe memory/reset
+    '        My.Settings.FirstLoad = True
+    '        FirstLoad()
+    '        Reload()
+    '    End Sub
+    '#End Region
+
 End Class
