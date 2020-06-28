@@ -10,11 +10,6 @@ Public Class FormChatWIndow
     Public DM As DialogManager.AI_Controllers.DialogControl.DialogManager
     Public CurrentDialogs As List(Of iDialog)
 
-
-
-
-
-
     Private Sub ButtonSendQuery_Click(sender As Object, e As EventArgs) Handles ButtonSendQuery.Click
         If DM.MasterList.Count > 0 Then
 
@@ -47,15 +42,29 @@ Public Class FormChatWIndow
     Private Sub FormChatWIndow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DM = New AI_Controllers.DialogControl.DialogManager
 
-        DM.ImportDialogs()
-        CurrentDialogs = DM.Dialogs
-
-        For Each item In CurrentDialogs
-            For Each SubItem In item.AvailableIntents
-                TextBoxViewIntent.Text = SubItem.ToJson
-                DM.MasterList.Add(SubItem)
+        CurrentDialogs = New List(Of iDialog)
+        'If Data held in Memeory load
+        If My.Settings.MemoryLoad = True Then
+            CurrentDialogs = My.Settings.HeldDialogs
+        Else
+            'Import Dialogs from Folder
+            DM.ImportDialogs()
+            CurrentDialogs = DM.Dialogs
+        End If
+        If CurrentDialogs.Count > 0 Then
+            'Create Internal List of TOTAL Intents
+            For Each item In CurrentDialogs
+                For Each SubItem In item.AvailableIntents
+                    'List in Verbose Text
+                    TextBoxViewIntent.Text = SubItem.ToJson
+                    'Add to Internal
+                    DM.MasterList.Add(SubItem)
+                Next
             Next
-        Next
+
+        Else
+            'No Dialogs Held Or Found
+        End If
     End Sub
 
 End Class
