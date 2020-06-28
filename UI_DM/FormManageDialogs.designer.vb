@@ -29,6 +29,7 @@ Partial Class FormManageDialogs
         Me.ListBoxDialogs = New System.Windows.Forms.ListBox()
         Me.ButtonExportJson = New System.Windows.Forms.Button()
         Me.ButtonTest = New System.Windows.Forms.Button()
+        Me.ButtonLoadMemory = New System.Windows.Forms.Button()
         Me.ButtonSave = New System.Windows.Forms.Button()
         Me.ButtonImport = New System.Windows.Forms.Button()
         Me.ButtonClear = New System.Windows.Forms.Button()
@@ -48,6 +49,7 @@ Partial Class FormManageDialogs
         Me.groupbox1.Controls.Add(Me.ListBoxDialogs)
         Me.groupbox1.Controls.Add(Me.ButtonExportJson)
         Me.groupbox1.Controls.Add(Me.ButtonTest)
+        Me.groupbox1.Controls.Add(Me.ButtonLoadMemory)
         Me.groupbox1.Controls.Add(Me.ButtonSave)
         Me.groupbox1.Controls.Add(Me.ButtonImport)
         Me.groupbox1.Controls.Add(Me.ButtonClear)
@@ -58,10 +60,10 @@ Partial Class FormManageDialogs
         Me.groupbox1.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.groupbox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.groupbox1.Location = New System.Drawing.Point(0, 0)
-        Me.groupbox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.groupbox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.groupbox1.Name = "groupbox1"
-        Me.groupbox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.groupbox1.Size = New System.Drawing.Size(454, 531)
+        Me.groupbox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.groupbox1.Size = New System.Drawing.Size(605, 654)
         Me.groupbox1.TabIndex = 1
         Me.groupbox1.TabStop = False
         Me.groupbox1.Text = "Dialogs"
@@ -69,9 +71,10 @@ Partial Class FormManageDialogs
         'TextBoxDialogName
         '
         Me.TextBoxDialogName.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TextBoxDialogName.Location = New System.Drawing.Point(11, 60)
+        Me.TextBoxDialogName.Location = New System.Drawing.Point(15, 74)
+        Me.TextBoxDialogName.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxDialogName.Name = "TextBoxDialogName"
-        Me.TextBoxDialogName.Size = New System.Drawing.Size(235, 26)
+        Me.TextBoxDialogName.Size = New System.Drawing.Size(312, 31)
         Me.TextBoxDialogName.TabIndex = 15
         '
         'Label2
@@ -80,10 +83,9 @@ Partial Class FormManageDialogs
         Me.Label2.BackColor = System.Drawing.Color.Black
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(2, 21)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(3, 26)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(244, 19)
+        Me.Label2.Size = New System.Drawing.Size(296, 25)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Create and Export Dialogs for use"
         '
@@ -94,10 +96,9 @@ Partial Class FormManageDialogs
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(2, 167)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(3, 213)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(311, 16)
+        Me.Label1.Size = New System.Drawing.Size(389, 21)
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Individual Dialogs containing Intents and EntityLists"
         '
@@ -107,11 +108,11 @@ Partial Class FormManageDialogs
         Me.ListBoxDialogs.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.ListBoxDialogs.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBoxDialogs.FormattingEnabled = True
-        Me.ListBoxDialogs.ItemHeight = 18
-        Me.ListBoxDialogs.Location = New System.Drawing.Point(2, 183)
-        Me.ListBoxDialogs.Margin = New System.Windows.Forms.Padding(2)
+        Me.ListBoxDialogs.ItemHeight = 23
+        Me.ListBoxDialogs.Location = New System.Drawing.Point(3, 234)
+        Me.ListBoxDialogs.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ListBoxDialogs.Name = "ListBoxDialogs"
-        Me.ListBoxDialogs.Size = New System.Drawing.Size(450, 346)
+        Me.ListBoxDialogs.Size = New System.Drawing.Size(599, 418)
         Me.ListBoxDialogs.TabIndex = 12
         '
         'ButtonExportJson
@@ -119,10 +120,10 @@ Partial Class FormManageDialogs
         Me.ButtonExportJson.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.ButtonExportJson.BackColor = System.Drawing.Color.Black
         Me.ButtonExportJson.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonExportJson.Location = New System.Drawing.Point(376, 57)
-        Me.ButtonExportJson.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonExportJson.Location = New System.Drawing.Point(501, 70)
+        Me.ButtonExportJson.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonExportJson.Name = "ButtonExportJson"
-        Me.ButtonExportJson.Size = New System.Drawing.Size(69, 32)
+        Me.ButtonExportJson.Size = New System.Drawing.Size(92, 39)
         Me.ButtonExportJson.TabIndex = 7
         Me.ButtonExportJson.Text = "Export"
         Me.ButtonExportJson.UseVisualStyleBackColor = False
@@ -132,23 +133,36 @@ Partial Class FormManageDialogs
         Me.ButtonTest.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.ButtonTest.BackColor = System.Drawing.Color.Black
         Me.ButtonTest.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonTest.Location = New System.Drawing.Point(308, 94)
-        Me.ButtonTest.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonTest.Location = New System.Drawing.Point(501, 116)
+        Me.ButtonTest.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonTest.Name = "ButtonTest"
-        Me.ButtonTest.Size = New System.Drawing.Size(52, 32)
+        Me.ButtonTest.Size = New System.Drawing.Size(92, 39)
         Me.ButtonTest.TabIndex = 7
         Me.ButtonTest.Text = "Test"
         Me.ButtonTest.UseVisualStyleBackColor = False
+        '
+        'ButtonLoadMemory
+        '
+        Me.ButtonLoadMemory.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.ButtonLoadMemory.BackColor = System.Drawing.Color.Black
+        Me.ButtonLoadMemory.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonLoadMemory.Location = New System.Drawing.Point(410, 116)
+        Me.ButtonLoadMemory.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ButtonLoadMemory.Name = "ButtonLoadMemory"
+        Me.ButtonLoadMemory.Size = New System.Drawing.Size(85, 39)
+        Me.ButtonLoadMemory.TabIndex = 7
+        Me.ButtonLoadMemory.Text = "Load"
+        Me.ButtonLoadMemory.UseVisualStyleBackColor = False
         '
         'ButtonSave
         '
         Me.ButtonSave.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.ButtonSave.BackColor = System.Drawing.Color.Black
         Me.ButtonSave.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonSave.Location = New System.Drawing.Point(251, 93)
-        Me.ButtonSave.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonSave.Location = New System.Drawing.Point(335, 114)
+        Me.ButtonSave.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonSave.Name = "ButtonSave"
-        Me.ButtonSave.Size = New System.Drawing.Size(52, 32)
+        Me.ButtonSave.Size = New System.Drawing.Size(69, 39)
         Me.ButtonSave.TabIndex = 7
         Me.ButtonSave.Text = "Save"
         Me.ButtonSave.UseVisualStyleBackColor = False
@@ -158,10 +172,10 @@ Partial Class FormManageDialogs
         Me.ButtonImport.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.ButtonImport.BackColor = System.Drawing.Color.Black
         Me.ButtonImport.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonImport.Location = New System.Drawing.Point(308, 56)
-        Me.ButtonImport.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonImport.Location = New System.Drawing.Point(411, 69)
+        Me.ButtonImport.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonImport.Name = "ButtonImport"
-        Me.ButtonImport.Size = New System.Drawing.Size(64, 32)
+        Me.ButtonImport.Size = New System.Drawing.Size(85, 39)
         Me.ButtonImport.TabIndex = 8
         Me.ButtonImport.Text = "Import"
         Me.ButtonImport.UseVisualStyleBackColor = False
@@ -171,10 +185,10 @@ Partial Class FormManageDialogs
         Me.ButtonClear.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.ButtonClear.BackColor = System.Drawing.Color.Black
         Me.ButtonClear.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonClear.Location = New System.Drawing.Point(67, 94)
-        Me.ButtonClear.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonClear.Location = New System.Drawing.Point(89, 116)
+        Me.ButtonClear.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonClear.Name = "ButtonClear"
-        Me.ButtonClear.Size = New System.Drawing.Size(56, 32)
+        Me.ButtonClear.Size = New System.Drawing.Size(75, 39)
         Me.ButtonClear.TabIndex = 8
         Me.ButtonClear.Text = "Clear"
         Me.ButtonClear.UseVisualStyleBackColor = False
@@ -184,10 +198,10 @@ Partial Class FormManageDialogs
         Me.ButtonRemove.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.ButtonRemove.BackColor = System.Drawing.Color.Black
         Me.ButtonRemove.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonRemove.Location = New System.Drawing.Point(127, 94)
-        Me.ButtonRemove.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonRemove.Location = New System.Drawing.Point(169, 116)
+        Me.ButtonRemove.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonRemove.Name = "ButtonRemove"
-        Me.ButtonRemove.Size = New System.Drawing.Size(69, 32)
+        Me.ButtonRemove.Size = New System.Drawing.Size(92, 39)
         Me.ButtonRemove.TabIndex = 9
         Me.ButtonRemove.Text = "Remove"
         Me.ButtonRemove.UseVisualStyleBackColor = False
@@ -197,10 +211,10 @@ Partial Class FormManageDialogs
         Me.ButtonEdit.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.ButtonEdit.BackColor = System.Drawing.Color.Black
         Me.ButtonEdit.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonEdit.Location = New System.Drawing.Point(11, 94)
-        Me.ButtonEdit.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonEdit.Location = New System.Drawing.Point(15, 116)
+        Me.ButtonEdit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonEdit.Name = "ButtonEdit"
-        Me.ButtonEdit.Size = New System.Drawing.Size(52, 32)
+        Me.ButtonEdit.Size = New System.Drawing.Size(69, 39)
         Me.ButtonEdit.TabIndex = 10
         Me.ButtonEdit.Text = "Edit"
         Me.ButtonEdit.UseVisualStyleBackColor = False
@@ -210,23 +224,23 @@ Partial Class FormManageDialogs
         Me.ButtonADD.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.ButtonADD.BackColor = System.Drawing.Color.Black
         Me.ButtonADD.Font = New System.Drawing.Font("Comic Sans MS", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonADD.Location = New System.Drawing.Point(251, 56)
-        Me.ButtonADD.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonADD.Location = New System.Drawing.Point(335, 69)
+        Me.ButtonADD.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonADD.Name = "ButtonADD"
-        Me.ButtonADD.Size = New System.Drawing.Size(52, 33)
+        Me.ButtonADD.Size = New System.Drawing.Size(69, 41)
         Me.ButtonADD.TabIndex = 11
         Me.ButtonADD.Text = "ADD"
         Me.ButtonADD.UseVisualStyleBackColor = False
         '
         'FormManageDialogs
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(454, 531)
+        Me.ClientSize = New System.Drawing.Size(605, 654)
         Me.Controls.Add(Me.groupbox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FormManageDialogs"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Manage Dialogs "
@@ -249,4 +263,5 @@ Partial Class FormManageDialogs
     Friend WithEvents ButtonImport As Button
     Friend WithEvents TextBoxDialogName As TextBox
     Friend WithEvents ButtonTest As Button
+    Friend WithEvents ButtonLoadMemory As Button
 End Class

@@ -6,13 +6,14 @@ Public Class FormManageDialogs
     ''' <summary>
     ''' Currently Held Dialogs
     ''' </summary>
-    Private AvailableDialogs As New List(Of iDialog)
+    Private AvailableDialogs As List(Of iDialog)
     Public Event SAVE_DIALOGS(ByRef Sender As FormManageDialogs, ByRef Dialogs As List(Of iDialog))
     ''' <summary>
     ''' Create New Dialog (FORM)
     ''' </summary>
     Private WithEvents CreateDialog As FormCreateDialog
     Private Sub FormManageDialogs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         AvailableDialogs = New List(Of iDialog)
     End Sub
     Private Sub ButtonADD_Click(sender As Object, e As EventArgs) Handles ButtonADD.Click
@@ -97,17 +98,34 @@ Public Class FormManageDialogs
     '' CUREENT _ FIX INTERNAL MEMEORY FOR LOAD/RELOAD (usful)
 
     '#Region "Button MEMEORY"
-    '    Private Sub ButtonSaveMemory_Click(sender As Object, e As EventArgs) Handles ButtonSave.Click
-    '        My.Settings.SaveDialogManager = DM
-    '        Reset()
-    '    End Sub
-    '    Private Sub ButtonLoadMemory_Click(sender As Object, e As EventArgs) Handles ButtonLoadMemory.Click
-    '        DM = My.Settings.SaveDialogManager
-    '        'wipe memory/reset
-    '        My.Settings.FirstLoad = True
-    '        FirstLoad()
-    '        Reload()
-    '    End Sub
+    Private Sub ButtonSaveMemory_Click(sender As Object, e As EventArgs) Handles ButtonSave.Click
+        If AvailableDialogs.Count > 0 Then
+
+
+            'Save Memory
+            My.Settings.HeldDialogs = AvailableDialogs
+            My.Settings.MemoryLoad = True
+
+
+        Else
+
+        End If
+    End Sub
+
+    Private Sub ButtonLoadMemory_Click(sender As Object, e As EventArgs) Handles ButtonLoadMemory.Click
+        If My.Settings.MemoryLoad = True Then
+            AvailableDialogs.AddRange(My.Settings.HeldDialogs)
+            ListBoxDialogs.Items.Clear()
+            For Each item In AvailableDialogs
+                ListBoxDialogs.Items.Add(item.DialogName)
+            Next
+            'MEANS MEMEORY SLOT EMPTY
+            My.Settings.MemoryLoad = False
+            My.Settings.HeldDialogs = New List(Of iDialog)
+        Else
+
+        End If
+    End Sub
     '#End Region
 
 End Class
