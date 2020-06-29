@@ -141,7 +141,24 @@ Namespace AI_Controllers
             Public Shared Function FromJson(ByRef Str As String) As iDialog
                 Try
                     Dim Converter As New JavaScriptSerializer
+
                     Dim diag As iDialog = Converter.Deserialize(Of iDialog)(Str)
+                    Return diag
+                Catch ex As Exception
+                    Dim Buttons As MessageBoxButtons = MessageBoxButtons.OK
+                    MessageBox.Show(ex.Message, "ERROR", Buttons)
+                End Try
+                Return Nothing
+            End Function
+            ''' <summary>
+            ''' deserialize object from Json
+            ''' </summary>
+            ''' <param name="Str">json</param>
+            ''' <returns></returns>
+            Public Shared Function ListFromJson(ByRef Str As String) As List(Of iDialog)
+                Try
+                    Dim Converter As New JavaScriptSerializer
+                    Dim diag As List(Of iDialog) = Converter.Deserialize(Of List(Of iDialog))(Str)
                     Return diag
                 Catch ex As Exception
                     Dim Buttons As MessageBoxButtons = MessageBoxButtons.OK

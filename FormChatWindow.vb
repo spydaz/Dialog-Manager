@@ -56,7 +56,7 @@ Public Class FormChatWIndow
             For Each item In CurrentDialogs
                 For Each SubItem In item.AvailableIntents
                     'List in Verbose Text
-                    TextBoxViewIntent.Text = SubItem.ToJson
+                    TextBoxViewIntent.Text &= vbNewLine & SubItem.ToJson
                     'Add to Internal
                     DM.MasterList.Add(SubItem)
                 Next

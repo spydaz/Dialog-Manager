@@ -79,8 +79,7 @@ Public Class FormManageDialogs
             For Each foundFile As String In My.Computer.FileSystem.GetFiles(Application.StartupPath & "\Dialogs\", Microsoft.VisualBasic.FileIO.SearchOption.SearchTopLevelOnly, "*.Json")
                 Dim Str = My.Computer.FileSystem.ReadAllText(foundFile)
                 Dim diag As iDialog = iDialog.FromJson(Str)
-                AvailableDialogs.Add(diag)
-                ListBoxDialogs.Items.Add(diag.DialogName)
+                AvailableDialogs.AddRange(diag)
             Next
         Catch ex As Exception
             Dim Buttons As MessageBoxButtons = MessageBoxButtons.OK
