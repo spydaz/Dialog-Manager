@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FormChatWIndow
+Partial Class FormChatTestWIndow
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class FormChatWIndow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormChatWIndow))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormChatTestWIndow))
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.GroupBox12 = New System.Windows.Forms.GroupBox()
         Me.TextBoxViewIntent = New System.Windows.Forms.TextBox()
@@ -364,7 +364,7 @@ Partial Class FormChatWIndow
         Me.Label7.TabIndex = 2
         Me.Label7.Text = "Previous Intent"
         '
-        'FormChatWIndow
+        'FormChatTestWIndow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -373,7 +373,7 @@ Partial Class FormChatWIndow
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "FormChatWIndow"
+        Me.Name = "FormChatTestWIndow"
         Me.Text = "Dialog Test Interface"
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox12.ResumeLayout(False)
