@@ -36,21 +36,21 @@ Partial Class FormCreateEntity
         'TextBoxParameterName
         '
         Me.TextBoxParameterName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxParameterName.ForeColor = System.Drawing.Color.White
-        Me.TextBoxParameterName.Location = New System.Drawing.Point(13, 61)
-        Me.TextBoxParameterName.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxParameterName.ForeColor = System.Drawing.Color.Black
+        Me.TextBoxParameterName.Location = New System.Drawing.Point(17, 75)
+        Me.TextBoxParameterName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxParameterName.Name = "TextBoxParameterName"
-        Me.TextBoxParameterName.Size = New System.Drawing.Size(332, 26)
+        Me.TextBoxParameterName.Size = New System.Drawing.Size(441, 30)
         Me.TextBoxParameterName.TabIndex = 1
         '
         'TextBoxParameterTrigger
         '
         Me.TextBoxParameterTrigger.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxParameterTrigger.ForeColor = System.Drawing.Color.White
-        Me.TextBoxParameterTrigger.Location = New System.Drawing.Point(11, 132)
-        Me.TextBoxParameterTrigger.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBoxParameterTrigger.ForeColor = System.Drawing.Color.Black
+        Me.TextBoxParameterTrigger.Location = New System.Drawing.Point(15, 162)
+        Me.TextBoxParameterTrigger.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxParameterTrigger.Name = "TextBoxParameterTrigger"
-        Me.TextBoxParameterTrigger.Size = New System.Drawing.Size(334, 26)
+        Me.TextBoxParameterTrigger.Size = New System.Drawing.Size(444, 30)
         Me.TextBoxParameterTrigger.TabIndex = 2
         '
         'Label2
@@ -58,10 +58,9 @@ Partial Class FormCreateEntity
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(4, 32)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(5, 39)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(141, 23)
+        Me.Label2.Size = New System.Drawing.Size(176, 29)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Parameter Name"
         '
@@ -70,10 +69,9 @@ Partial Class FormCreateEntity
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(4, 99)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(5, 122)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(68, 23)
+        Me.Label3.Size = New System.Drawing.Size(86, 29)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Trigger"
         '
@@ -83,10 +81,10 @@ Partial Class FormCreateEntity
         Me.ButtonADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonADD.ForeColor = System.Drawing.Color.Black
         Me.ButtonADD.Image = CType(resources.GetObject("ButtonADD.Image"), System.Drawing.Image)
-        Me.ButtonADD.Location = New System.Drawing.Point(352, 46)
-        Me.ButtonADD.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonADD.Location = New System.Drawing.Point(469, 57)
+        Me.ButtonADD.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonADD.Name = "ButtonADD"
-        Me.ButtonADD.Size = New System.Drawing.Size(141, 55)
+        Me.ButtonADD.Size = New System.Drawing.Size(188, 68)
         Me.ButtonADD.TabIndex = 6
         Me.ButtonADD.Text = "ADD"
         Me.ButtonADD.UseVisualStyleBackColor = False
@@ -97,10 +95,10 @@ Partial Class FormCreateEntity
         Me.ButtonClearEntity.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonClearEntity.ForeColor = System.Drawing.Color.Black
         Me.ButtonClearEntity.Image = CType(resources.GetObject("ButtonClearEntity.Image"), System.Drawing.Image)
-        Me.ButtonClearEntity.Location = New System.Drawing.Point(349, 105)
-        Me.ButtonClearEntity.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonClearEntity.Location = New System.Drawing.Point(465, 129)
+        Me.ButtonClearEntity.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ButtonClearEntity.Name = "ButtonClearEntity"
-        Me.ButtonClearEntity.Size = New System.Drawing.Size(144, 56)
+        Me.ButtonClearEntity.Size = New System.Drawing.Size(192, 69)
         Me.ButtonClearEntity.TabIndex = 6
         Me.ButtonClearEntity.Text = "Clear"
         Me.ButtonClearEntity.UseVisualStyleBackColor = False
@@ -119,23 +117,23 @@ Partial Class FormCreateEntity
         Me.GroupBox1.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
         Me.GroupBox1.Location = New System.Drawing.Point(0, 0)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(504, 177)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(672, 218)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Entity"
         '
         'FormCreateEntity
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Aqua
-        Me.ClientSize = New System.Drawing.Size(504, 183)
+        Me.ClientSize = New System.Drawing.Size(672, 225)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FormCreateEntity"
         Me.Text = "Entity"
         Me.GroupBox1.ResumeLayout(False)

@@ -122,6 +122,7 @@ Public Class FormCreateIntent
         End If
     End Sub
     Private Sub ButtonRemoveResponse_Click(sender As Object, e As EventArgs) Handles ButtonRemoveResponse.Click
+
         Try
             If ListBoxResponses.SelectedItem IsNot Nothing Then
                 For Each item In CurrentIntent.Responses
@@ -134,8 +135,8 @@ Public Class FormCreateIntent
             End If
 
         Catch ex As Exception
-            Dim Buttons As MessageBoxButtons = MessageBoxButtons.OK
-            MessageBox.Show(ex.Message, "ERROR", Buttons)
+            '  Dim Buttons As MessageBoxButtons = MessageBoxButtons.OK
+            '  MessageBox.Show(ex.Message, "ERROR", Buttons)
         End Try
     End Sub
     Private Sub ButtonClearResponse_Click(sender As Object, e As EventArgs) Handles ButtonClearResponse.Click

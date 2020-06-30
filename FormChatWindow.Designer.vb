@@ -95,12 +95,12 @@ Partial Class FormChatTestWIndow
         '
         Me.TextBoxViewIntent.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.TextBoxViewIntent.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBoxViewIntent.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxViewIntent.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxViewIntent.Location = New System.Drawing.Point(3, 26)
         Me.TextBoxViewIntent.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBoxViewIntent.Multiline = True
         Me.TextBoxViewIntent.Name = "TextBoxViewIntent"
-        Me.TextBoxViewIntent.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBoxViewIntent.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.TextBoxViewIntent.Size = New System.Drawing.Size(706, 240)
         Me.TextBoxViewIntent.TabIndex = 0
         '

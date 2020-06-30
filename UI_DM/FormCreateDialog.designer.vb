@@ -134,7 +134,7 @@ Partial Class FormCreateDialog
         '
         'TextBoxDialogName
         '
-        Me.TextBoxDialogName.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TextBoxDialogName.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TextBoxDialogName.Dock = System.Windows.Forms.DockStyle.Top
         Me.TextBoxDialogName.Enabled = False
         Me.TextBoxDialogName.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -272,12 +272,14 @@ Partial Class FormCreateDialog
         '
         'TextBoxEntityListName
         '
-        Me.TextBoxEntityListName.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TextBoxEntityListName.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TextBoxEntityListName.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.TextBoxEntityListName.Location = New System.Drawing.Point(3, 115)
         Me.TextBoxEntityListName.Name = "TextBoxEntityListName"
         Me.TextBoxEntityListName.Size = New System.Drawing.Size(585, 31)
         Me.TextBoxEntityListName.TabIndex = 16
+        Me.TextBoxEntityListName.Tag = "Insert New Entitylist Name here to add new record"
+        Me.TextBoxEntityListName.Text = "NewList"
         '
         'ButtonClearEntityLists
         '
